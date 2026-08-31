@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Landing Page Checklist — 23 checks before you ship</title>
+<meta name="description" content="23-point interactive landing page checklist: hero, proof, pricing, trust, mobile. Check items off, see your score. Free.">
+<style>
+  :root { --fg:#1a1a2e; --muted:#6b6b80; --accent:#4f46e5; --bg:#fafafa; --card:#fff; --border:#e5e5ea; }
+  * { box-sizing:border-box; }
+  body { font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--fg); background:var(--bg); margin:0; line-height:1.6; }
+  .wrap { max-width:780px; margin:0 auto; padding:40px 20px 72px; }
+  h1 { font-size:1.8rem; letter-spacing:-.02em; margin:6px 0 4px; }
+  .sub { color:var(--muted); margin:0 0 18px; }
+  .score { position:sticky; top:0; background:var(--bg); padding:10px 0; z-index:2; border-bottom:1px solid var(--border); margin-bottom:8px; }
+  .bar { height:10px; background:#ececf2; border-radius:99px; overflow:hidden; }
+  .bar > div { height:100%; background:var(--accent); width:0%; transition:width .25s; }
+  .snum { font-weight:700; font-size:.9rem; margin:6px 0 0; }
+  h2 { font-size:1rem; margin:26px 0 8px; color:var(--accent); text-transform:uppercase; letter-spacing:.06em; font-size:.8rem; }
+  .item { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px 16px; margin:8px 0; display:flex; gap:12px; align-items:flex-start; }
+  .item input { margin-top:5px; accent-color:var(--accent); width:16px; height:16px; flex:none; }
+  .item label { cursor:pointer; }
+  .item b { display:block; }
+  .item small { color:var(--muted); }
+  .item.done { opacity:.55; }
+  .item.done b { text-decoration:line-through; }
+  .cta { margin:30px 0; padding:20px 22px; border:1px dashed var(--accent); border-radius:12px; background:#f7f7ff; }
+  .cta a { color:var(--accent); font-weight:700; }
+  footer { margin-top:34px; padding-top:16px; border-top:1px solid var(--border); color:var(--muted); font-size:.85rem; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>The Landing Page Checklist</h1>
+  <p class="sub">23 checks before you ship. Tick items as you fix them — the point is not the score, it's never shipping a page that fails #4 and #17.</p>
+
+  <div class="score"><div class="bar"><div id="fill"></div></div><p class="snum"><span id="n">0</span>/23 · <span id="grade">Not shippable</span></p></div>
+
+  <h2>Hero (the 5-second test)</h2>
+  <div class="item"><input type="checkbox" id="c1"><label for="c1"><b>A stranger can say what you sell after 5 seconds</b><small>Show it to someone outside your head. Not "what do you think" — "what do we sell?"</small></label></div>
+  <div class="item"><input type="checkbox" id="c2"><label for="c2"><b>The hero names a pain, not a category</b><small>"Stop copy-pasting CSVs" beats "Data workflow platform".</small></label></div>
+  <div class="item"><input type="checkbox" id="c3"><label for="c3"><b>One primary CTA, phrased as the outcome</b><small>"Start free — no card" · not "Submit", not three buttons.</small></label></div>
+  <div class="item"><input type="checkbox" id="c4"><label for="c4"><b>CTA is visible without scrolling on a laptop and a phone</b><small>1366×768 and a 390px phone. Physically check both.</small></label></div>
+
+  <h2>Proof (borrowed trust)</h2>
+  <div class="item"><input type="checkbox" id="c5"><label for="c5"><b>At least one number in your proof</b><small>"2,400 teams" · "4.8★" · "cuts QA time 40%" — adjectives are not proof.</small></label></div>
+  <div class="item"><input type="checkbox" id="c6"><label for="c6"><b>Testimonials name a result, not a feeling</b><small>"Our QA cycle went from 40 min to zero" · not "Great product!"</small></label></div>
+  <div class="item"><input type="checkbox" id="c7"><label for="c7"><b>Any logo wall is real customers, max 6</b><small>Fake-ish partner logos get you called out. Small? Use counts and quotes instead.</small></label></div>
+
+  <h2>Body (the skim path)</h2>
+  <div class="item"><input type="checkbox" id="c8"><label for="c8"><b>A "how it works" in 3 steps or fewer</b><small>1. [action] → 2. [action] → 3. [outcome]. If you can't fit 3, the product's too complex or the page is.</small></label></div>
+  <div class="item"><input type="checkbox" id="c9"><label for="c9"><b>Features are written as benefits first</b><small>"Never re-drink a mediocre bottle" → then how. Benefit, then mechanism.</small></label></div>
+  <div class="item"><input type="checkbox" id="c10"><label for="c10"><b>One image or GIF shows the product doing the thing</b><small>Screenshots beat illustrations for tools. 8-second before/after GIF beats both.</small></label></div>
+  <div class="item"><input type="checkbox" id="c11"><label for="c11"><b>An honest "not for" section exists</b><small>"Skip this if…" qualifies traffic and lifts conversion. Counterintuitive but repeatedly true.</small></label></div>
+
+  <h2>Pricing (the fear zone)</h2>
+  <div class="item"><input type="checkbox" id="c12"><label for="c12"><b>Prices are visible without a "contact us"</b><small>Hidden pricing = assumed unaffordable. One tier can say "contact" — not all.</small></label></div>
+  <div class="item"><input type="checkbox" id="c13"><label for="c13"><b>A free or cheap entry tier exists</b><small>Unless you're enterprise-on-purpose, give skint visitors a legal path in.</small></label></div>
+  <div class="item"><input type="checkbox" id="c14"><label for="c14"><b>The recommended tier is visually marked</b><small>"Most picked" badge, border, size. Deciding for people sells more than options.</small></label></div>
+  <div class="item"><input type="checkbox" id="c15"><label for="c15"><b>Cancellation/refund is answered in FAQ, plainly</b><small>"Reply to the receipt email within 14 days" — one sentence kills the biggest purchase fear.</small></label></div>
+
+  <h2>Trust (the boring stuff that closes)</h2>
+  <div class="item"><input type="checkbox" id="c16"><label for="c16"><b>It says who built this, in human words</b><small>"Built by Mara, a working freelancer" > "Team of passionate experts".</small></label></div>
+  <div class="item"><input type="checkbox" id="c17"><label for="c17"><b>No stock photos of people in headsets</b><small>You know the ones. Screenshots, product, or honest illustration.</small></label></div>
+  <div class="item"><input type="checkbox" id="c18"><label for="c18"><b>Privacy is addressed in one plain sentence</b><small>Especially tools: "runs locally, zero data leaves your machine".</small></label></div>
+  <div class="item"><input type="checkbox" id="c19"><label for="c19"><b>Every external claim links to its source</b><small>"+38% inbound leads" links to the case. Unsourced numbers read as fiction.</small></label></div>
+
+  <h2>Mobile & mechanics</h2>
+  <div class="item"><input type="checkbox" id="c20"><label for="c20"><b>Page passes a real phone, not devtools emulation</b><small>Thumb-reach, tap targets ≥44px, no horizontal scroll. Load it on your actual phone.</small></label></div>
+  <div class="item"><input type="checkbox" id="c21"><label for="c21"><b>Title + meta description written for clicks, not keywords</b><small>It's the ad Google shows. Free tool: <a href="https://hahaknight.github.io/seo-meta-generator/" style="color:var(--accent)">SEO Meta Generator</a>.</small></label></div>
+  <div class="item"><input type="checkbox" id="c22"><label for="c22"><b>All links work — including footer and legal</b><small>Dead links on a sales page read as "abandoned". Click every one.</small></label></div>
+  <div class="item"><input type="checkbox" id="c23"><label for="c23"><b>One analytics event exists (view / CTA click)</b><small>No data = flying blind. Even a pixel-level counter beats nothing.</small></label></div>
+
+  <div class="cta">
+    <strong>This checklist is the free tier of a system.</strong> The <a href="https://hahaknight.github.io/indie-landing-copy-pack/">Indie Landing Copy Pack</a> contains the 10 templates that pass it — skeletons, slot guides and worked demos for $4.99. Free neighbors: <a href="https://hahaknight.github.io/freelance-rate-calculator/">Rate Calculator</a> · <a href="https://hahaknight.github.io/seo-meta-generator/">Meta Generator</a>.
+  </div>
+
+  <footer>
+    <p>No data stored · progress lives in this tab · <a href="https://github.com/Hahaknight/landing-checklist">Source on GitHub</a> · <a href="https://hahaknight.github.io/dev-readme-skeleton-pack/">README Skeletons</a></p>
+  </footer>
+</div>
+<script>
+var grades=[[0,'Not shippable'],[8,'Fixing needed'],[14,'Close — polish the fears'],[19,'Shippable'],[22,'Ship it today']];
+function upd(){
+  var all=document.querySelectorAll('.item input'),n=0;
+  all.forEach(function(c){if(c.checked)n++;c.closest('.item').className='item'+(c.checked?' done':'');});
+  document.getElementById('n').textContent=n;
+  document.getElementById('fill').style.width=(n/all.length*100)+'%';
+  var g=grades[0][1];for(var i=0;i<grades.length;i++){if(n>=grades[i][0])g=grades[i][1];}
+  document.getElementById('grade').textContent=g;
+}
+document.querySelectorAll('.item input').forEach(function(c){c.addEventListener('change',upd);});
+</script>
+</body>
+</html>
